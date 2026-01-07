@@ -1,0 +1,205 @@
+/* Dar fondo */
+body{
+    background-color: black;
+}
+
+/* Clase titulo */
+.titulo
+{
+    background-image: radial-gradient(circle at 50% -20.71%, #d1fff8 0, #befff6 10%
+        , #a7fff4 20%, #8dfff3 30%, #6cfbf2 40%, #3cf2f2 50%, #00e8f3 60%, #00dff5 70%, 
+        #00d6f9 80%, #00cefd 90%, #00c6ff 100%);
+    text-align: center;
+    margin:  20px 500px;
+    padding: 10px;
+    border-radius: 120px;
+    /* Movimiento */
+    animation:movimiento 4s linear infinite;  
+}
+
+/* a */
+a
+{
+    text-decoration: none;
+}
+
+/* Juegos */
+.juegos{
+    animation: movimiento 2.5s linear infinite;
+}
+
+/* Bloques */
+.bloque
+{
+
+    background-image: radial-gradient(circle at 50% -20.71%, #fffe80 0, 
+        #ffff7b 6.25%, #ffff78 12.5%, #f0ff77 18.75%, #daff77 25%, #c1ff79 31.25%, 
+        #a4ff7c 37.5%, #83fd81 43.75%, #57f988 50%, #00f591 56.25%, #00f19c 62.5%, #00eda9 68.75%, 
+        #00e9b8 75%, #00e6c8 81.25%, #00e2d9 87.5%, #00dfeb 93.75%, #00dcfd 100%);
+
+    text-align: center;
+    display: inline-block;
+    margin:  20px 200px 20px 270px;
+    padding: 20px 30px;
+    border-radius: 100px;
+
+}
+
+/* Bloque hover : pasar mouse para arriba y cambia de color */
+.bloque:hover{
+    background-image: linear-gradient(180deg, #ff597b 0, #ff4d85 8.33%, 
+        #ff3f8f 16.67%, #ff3299 25%, #f323a4 33.33%, #e415ae 41.67%, #d109b8 50%, 
+        #ba0cc2 58.33%, #9f1bcd 66.67%, #7d28d7 75%, #4c34e0 83.33%, #003ee9 91.67%, #0046ef 100%);
+    transform: scale(1.2); 
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+
+}
+
+/* Tamaño de imagen */
+img{
+    max-width: 100px;
+    max-height: 100px;
+    visibility: visible;    
+}
+
+
+/* Letra de boton */
+.boton
+{
+    font-size: 20px;
+    margin: 20px 630px;
+}
+
+/* Eliminar bordes */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* burbujas */
+
+.burbuja{
+    border-radius: 50%;
+    background: rgb(0, 207, 243);
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+
+    animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+/* Animaciones de las burbujas */
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+/* Movimiento de las burbujas */
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

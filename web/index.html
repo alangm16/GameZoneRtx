@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Predefinir el idioma -->
+<html lang="en">
+    <head>
+        <!-- En head se ubican las propiedades principales, tamaño predefinido -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Titulo de la pagina -->
+        <title>Game Zone Rtx</title>
+        <!-- Asociar css (hoja de estilo) a pagina principal -->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+        <!-- Clases de Css -->
+        <div class="titulo">
+            <h1>--GameZoneRtx--
+                Escoja su juego preferido: 
+            </h1>
+            <br>
+        </div>
+        <br>
+        <!-- Relacionamos el servlet para enviar los datos con el method get -->
+        <form action="Servlet" method="get">
+
+            <div class="bloque juegos">
+
+                <!-- Links para tomar las imagenes -->
+                <img src="https://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/128/22285-snake-icon.png" alt="">
+                <h2>SnakeGame</h2>
+                <!-- Tomar valor del radio para mandar a servlet -->
+                <input type="radio" name ="juego" value="SnakeGame">
+            </div>
+
+            <div class="bloque juegos">
+
+                <!-- Links para tomar las imagenes -->
+                <img src="https://cdn-icons-png.flaticon.com/512/566/566294.png" alt="">
+                <h2>3 in a Row</h2>
+                <!-- Tomar valor del radio para mandar a servlet -->
+                <input type="radio" name ="juego" value="3inaRow">
+            </div>
+
+
+            <!-- Boton para enviar los datos al servlet -->
+            <input type="submit"  class="bloque boton" value="Jugar">
+
+            <!-- Burbujas para dar diseño a la página -->
+            <div class="burbujas">
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+            </div>
+
+    </body>
+</html>
